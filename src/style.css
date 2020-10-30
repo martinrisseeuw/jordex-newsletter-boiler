@@ -1,0 +1,323 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: #191919;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 auto !important;
+}
+
+table table table {
+  table-layout: auto;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* What it does: A work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+
+h1,
+.alpha,
+h2,
+.beta,
+h3,
+.gamma,
+h4,
+.delta,
+h5,
+.epsilon,
+h6,
+.zeta {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1,
+.alpha {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+h2,
+.beta {
+  font-style: normal;
+  font-size: 21px;
+  line-height: 150%;
+}
+
+
+.lead {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.body-text {
+  line-height: 180%;
+}
+
+.body-text ul {
+  line-height: 180%;
+  padding: 16px 32px;
+}
+
+.text-container {
+  padding: 16px;
+  background: #000000;
+  border-radius: 6px;
+}
+
+.video-wrapper {
+  display: none;
+}
+
+.spacerline {
+  height: 1px
+}
+
+.white-50 {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.pt-48 {
+  padding-top: 48px;
+}
+
+.pt-64 {
+  padding-top: 64px;
+}
+
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+
+
+.px-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.pr-24 {
+  padding-right: 24px;
+}
+
+.pl-24 {
+  padding-left: 24px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.wrapper {
+  max-width: 648px;
+  margin: auto;
+  width: 100%;
+}
+
+.wrapper-small {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+}
+
+
+.newsitem_container {
+  padding: 16px;
+}
+
+.newsitem_container__left {
+  padding-right: 12px;
+}
+
+.newsitem_container__right {
+  padding-left: 12px;
+}
+
+.newsitem__image {
+  padding: 16px 16px 0;
+}
+
+
+.website__link a {
+  display: table;
+  background-color: #000000;
+}
+
+.website__link img {
+  display: table-cell;
+}
+
+.website__link span {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-left: 4px;
+}
+
+
+.button {
+  padding: 8px 16px;
+  background: white;
+  font-weight: bold;
+  border-radius: 3px;
+  white-space: nowrap;
+  width: 68px;
+}
+
+.button a {
+  color: #000000 !important;
+}
+
+
+.newsitem__image img {
+  border-radius: 4px;
+  width: 100% !important;
+}
+
+.newsitem__header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 16px;
+}
+
+.newsitem__body {
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.newsitem {
+  border-radius: 6px;
+  background-color: #000000;
+}
+
+.social-icon {
+  width: 40px;
+}
+
+.spacer-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-text {
+  vertical-align: baseline;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a{
+  color: rgba(255,255,255,0.5);
+}
+
+.video-item img {
+  border-radius: 6px;
+  width: 100% !important;
+}
+
+.video-img {
+  height:auto !important;
+  max-width:600px !important;
+  width: 100% !important;
+}
+
+.highlight-container {
+  background: #000;
+}
