@@ -1,50 +1,60 @@
-<table  mc:repeatable="content" mc:variant="team items">
+<table mc:repeatable="content" mc:variant="team items">
   <tr>
-    <td class="pt-64">
+    <td class="pt-32">
       <table class="wrapper">
         <tr mc:hideable>
-          <td class="px-24 pb-24 beta" mc:edit="team_title">Het team van Jordex Projects</td>
-        </tr>
-        <tr>
-          <td class="px-24">
+          <td class="pt-16 pb-16">
             <table>
               <tr>
-                <td class="col-1-2 newsitem_container__left">
-                  <table class="newsitem">
-                    <tr>
-                      <th class="newsitem__image" mc:edit="teamitem_left_image">
-                        <img mc:edit="team_image_left" src="https://mcusercontent.com/fab648654db193a9acfa71d15/images/518e131c-d3ab-4461-8197-cbc27070b641.gif" />
-                      </th>
-                    </tr>
-                    <tr>
-                      <td class="px-16 newsitem__header" mc:edit="teamitem_left_title">
-                        Gerben Langstraat
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="p-16 newsitem__body" mc:edit="teamitem_left_body">
-                        T. +31 (0)10 303 71 01 <br/>
-                        E. gerben.langstraat@jordex.com 
-                      </td>
-                    </tr>
-                  </table>
+                <td class="px-24 beta" mc:edit="team_subtitle">Ons team</td>
+              </tr>
+              <tr>
+                <td class="px-24 body-text white-50" mc:edit="team_title">Ons bedrijf is sterk afhankelijk van de menselijke factor en, net als onze marktbenadering, stimuleren we persoonlijke ontwikkeling met training op alle niveaus.</td>
+              </tr>
+              <tr>
+                <td class="px-24 pt-8">
+                  <a class="button__link" href="https://jordex.com/team/" mc:edit="team_link">
+                    Check our team
+                  </a>
                 </td>
-                <td class="col-1-2 newsitem_container__right">
-                  <table class="newsitem">
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr mc:repeatable="newsrow">
+          <td class="px-16">
+            <table>
+              <tr mc:repeatable="teamitem">
+                <td class="px-8 teamitem_container">
+                  <table class="team-item">
                     <tr>
-                      <th class="newsitem__image" mc:edit="teamitem_right_image">
-                        <img mc:edit="team_image_right" src="https://mcusercontent.com/fab648654db193a9acfa71d15/images/518e131c-d3ab-4461-8197-cbc27070b641.gif" />
-                      </th>
-                    </tr>
-                    <tr>
-                      <td class="px-16 newsitem__header" mc:edit="teamitem_right_title">
-                        Gerben Langstraat
+                      <td class="teamitem__image p-16">
+                        <img
+                        src="https://jordex.com/wp-content/uploads/2016/03/Lotte-de-Hoogh-2.jpg" />
                       </td>
-                    </tr>
-                    <tr>
-                      <td class="p-16 newsitem__body" mc:edit="teamitem_right_body">
-                        T. +31 (0)10 303 71 01 <br/>
-                        E. gerben.langstraat@jordex.com 
+                      <td class="p-16 teamitem__main" mc:edit="teamitem_body">
+                        <table>
+                          <tr>
+                            <td class="teamitem__header">Lotte de Hoogh</td>
+                          </tr>
+                          <tr>
+                            <td class="slogan small__body__text">Communication Advisor</td>
+                          </tr>
+                          <tr>
+                            <td class="py-16 teamitem__body">
+                              <b>T.</b> +31 (0)6 21 21 21 21 <br/>
+                              <b>E.</b></b> Lotte.deHoogh@jordex.com<br/>
+                            </td>
+                          </tr>
+                          <tr mc:hideable>
+                            <td class="newsitem__footer website__link">
+                              <a href="#">
+                                <img width="20px" style="vertical-align: center;" src="https://mcusercontent.com/fab648654db193a9acfa71d15/images/a84d8eef-342c-4354-90a6-fa1f5d42cabd.png" />
+                                <span>Read more</span>
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
